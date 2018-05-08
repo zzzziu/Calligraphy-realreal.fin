@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>캘리그라피</title>
+	<meta property="og:image" content="title-img.jpg">
+	<meta property="og:title" content="캘리그라피">
+	<meta property="og:description" content="캘리그라피(Calligraphy)란 '손으로 그린 문자'라는 뜻이나, 조형상으로는 의미전달의 수단이라는 문자의 본뜻을 떠나 유연하고 동적인 선, 글자 자체의 독특한 번짐, 살짝 스쳐가는 효과, 여백의 균형미등 순수 조형의 관점에서 보는 것을 뜻한다.">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan Script" rel="stylesheet">
+
+	<style>
+		.a{ width: 1200px; margin: auto; position: relative;}
+		#back0{ background: url('./img/back0-.jpg'); background-size: 100% auto ; height : 499px;}
+		#back1{ background: url('./img/back1-.jpg'); background-size: 100% auto ; height : 936px;}
+		#back2{ background: url('./img/back2-.jpg'); background-size: 100% auto ; height : 1733px;}
+		#back3{ background: url('./img/back3-.jpg'); background-size: 100% auto ; height : 1418px;}
+		#back4{ background: url('./img/back4-.jpg'); background-size: 100% auto ; height : 2486px;}
+		#back5{ background: url('./img/back5-.jpg'); background-size: 100% auto ; height : 3292px;}
+		#back6{ background: url('./img/back6-.jpg'); background-size: 100% auto ; height : 3033px;}
+		#back7{ background: url('./img/back7-.jpg'); background-size: 100% auto ; height : 1029px;}
+
+		h1 ,h2{font-family: 'Kaushan Script', cursive;}
+	
+
+		p1,p2,p3,p4,p5{font-family: 'Nanum Myeongjo', serif; font-weight: normal;}
+		h3,p6{font-family: 'Nanum Myeongjo', serif; font-weight: bold;}
+
+		h1 {font-size:165px; position: absolute; text-align: center; word-spacing: 10px;}
+		h2 {font-size:55px; position: absolute; text-align: center; word-spacing: 10px;}
+		h3 {font-size:25px; position: absolute; text-align: left; word-spacing: 2px;}
+
+		p1, p2{font-size: 15px; position: absolute; line-height: 187%; text-align: left; word-spacing: -0.99px;}
+		p3{font-size: 11px; position: absolute; line-height: 187%; text-align: center; word-spacing: -1.8px;}
+		p4{font-size: 14.5px; position: absolute; line-height: 187%; text-align: right; word-spacing: -2px;}
+		p5{font-size: 18px; position: absolute; line-height: 162%; text-align: left; word-spacing: -2.6px;}
+		p6{font-size:26.7px; position: absolute; text-align: left; letter-spacing: -0.2px;}
+		
+
+
+
+		/*header*/
+		header h1{top: 5px; left: 192px;}
+
+		/*contents1*/
+		#contents1 h2{top: 50px; left: 172px;}
+		#contents1 p1{width: 600px; top: 198.5px; left: 172px;}
+		#contents1 p3{top: 385px; left: 172px;}
+
+		/*contents2*/
+		#contents2 p1{width: 600px;}
+		#contents2 h3{width: 580px;}
+		#contents2 h2{top: 13px; left: 172px;}
+		#contents2 #h1{top: 137px; left: 214px;}
+		#contents2 #p1{top:217.5px; left: 172px;}
+		#contents2 #p3{top: 831.2px; left: 444px;}
+		#contents2 #p4{top: 831.2px; left: 823.5px;}
+		#contents2 #h2{top: 915px; left: 500px;}
+		#contents2 #p2{top: 995px; left: 457px;}
+
+		/*contents3*/
+		#contents3 h2{top: 119px; left: 172px;}
+		#contents3 p1{width: 1000px; top: 264px; left: 172px;}
+		#contents3 h3{width: 580px; top: 828.8px; left: 214px;}
+		#contents3 p2{width: 400px; top: 912.8px; left: 172px;}
+
+		/*contents4*/
+		#contents4 h3{width: 580px;}
+		#contents4 p2{width: 400px;}
+		
+		#contents4 h2{top: 16px; left: 172px;}
+		#contents4 p1{width: 800px; top:167px; left: 172px;}
+	
+		#contents4 #h1{top: 276.5px; left: 786.5px;}
+		#contents4 #p1{top: 360px; left: 745px;}
+
+		#contents4 #h2{top: 921px; left: 214px;}
+		#contents4 #p2{top: 1005px; left: 172px;}
+
+		#contents4 #h3{top: 1665.5px; left: 786.5px;}
+		#contents4 #p3{top: 1749px; left: 745px;}
+
+		/*contents5*/
+		#contents5 h2{top: 30px; left: 172px;}
+		#contents5 p1{width: 600px; top: 177.5px; left: 172px;}
+
+		#contents5 #h1{top: 460.5px; left: 808px;}
+		#contents5 #p1{top: 545px; left: 765px;}
+
+		/*contents6*/
+		#contents6 h3{width: 400px; top: 325px; left: 214px;}
+		#contents6 p2{width: 400px; top: 408px; left: 172px;}
+
+		/*footer*/
+		footer p5{width: 530px;}
+		footer #p1{top: 75px; left: 170px;}
+		footer #p2{top: 75px; left: 655px;}
+		footer p6{width: 500px;}
+		footer #p3{top: 900px; left: 172px;}
+		footer #p4{top: 900px; left: 565px;}
+		footer #p5{top: 900px; left: 790px;}
+		
+	</style>
+</head>
+
+
+<body>
+	<header class="a">
+		<div class="a" id="back0">
+			<h1>Calligraphy</h1>
+			
+			</div>
+	</header>
+	<section id="contents1">
+		<div class="a">
+			<div class="a" id="back1">
+				<h2>Calligraphy</h2>
+				<p1>캘리그라피(Calligraphy)란 '손으로 그린 문자'라는 뜻이나, 조형상으로는 의미전달의<br>수단이라는 문자의 본뜻을 떠나 유연하고 동적인 선, 글자 자체의 독특한 번짐, 살짝<br>스쳐가는 효과, 여백의 균형미등 순수 조형의 관점에서 보는 것을 뜻한다. 캘리그라피(call<br>igraphy)의 <strong>Calli는 미</strong>를 뜻하며, <strong>Graphy는 화풍, 서풍, 서법, 기록법</strong>의 의미를 갖고 있다.<br><br>즉, 캘리그라피는 <strong>기계적인 표현이 아닌 손으로 쓴 아름답고 개성있는 글자체</strong>이다.</p1>
+				<p3>[네이버 지식백과] 캘리그라피(시사상식사전, 박문각)</p3>
+
+			</div>
+	</section>
+	<section id="contents2">
+		<div class="a">
+			<div class="a" id="back2">
+				<h2>Histroy</h2>
+				<h3 id="h1">서양의  캘리그라피</h3>
+				<p1 id="p1">서양의 캘리그라피는 14~16세기 북부 이탈리아의 서풍을 이어받아 시작했다. 이것을 <br>부흥시킨 사람은 영국의 에드워드 존스턴(Edward Johnston)이고 캘리그래피라는 용어를 <br>처음으로 사용한 사람은 기욤 아뽈리네르이다. 현대 타이포그라피 디자인에서 <br>캘리그라피를 직접 적용한 대표적인 사람은 독일의 헤르만 자프(Hermann Zapf), 미국의 <br>허브루발린(Herb Lubalin)등이다.</p1>
+				<p4 id="p3">헤르만 자프(Hermann Zapf)의 작품</p4>
+				<p4 id="p4">허브루발린(Herb Lubalin)의 작품</p4>
+
+				<h3 id="h2">한국의  캘리그라피</h3>
+				<p1 id="p2">대한민국에서는 서예를 영어로 캘리그라피라고 하였다. 그러나 21세기 이후부터는 서예적 <br>기법에 디자인을 더한 것을 캘리그라피라고 부르기 시작하면서 서예와 구분되었다. 1998년 <br>11월 10일 최초의 캘리그라피 전문회사 필 디자인의 탄생과 함께 전문화 되기 시작했다. <br>책표지, 라면 패키지, 소주패키지, 영화 타이틀 디자인 등에 사용되면서 하나의 디자인 <br>전문분야로 자리잡았다. 2011년부터는 캘리그라피 학원이나 개인 교습소가 많아지고, <br>문화센터 등에서도 캘리그라피 교육이 보급되었다. 소셜미디어의 등장으로 누구나 자신의 <br>작품을 공유할 수 있게 되면서 폭발적으로 대중화되었다.</p1>
+				
+			</div>
+	</section>
+	<section id="contents3">
+		<div class="a">
+			<div class="a" id="back3">
+				<h2>Type of typeface</h2>
+				<p1>캘리그라피(Calligraphy)에서 쓰는 수많은 서체들 중 가장 대중적으로 많이 쓰는 7개의 서체를 소개하겠다.<br>이탤릭체, 코퍼 플레이트, 고딕체, 언셜체, 로마 대문자, 파운데이셔널 그리고 모던캘리그라피가 있다.</p1>
+				<h3>이탤릭체</h3>
+				<p2>이탤릭체는 타이포그래피에서 손글씨를 기반<br>으로 흘려 쓰는 자형을 일컷는다. 필사술로부터 <br>영향을 받아, 조금 오른쪽으로 기운 것을 알 <br>수 있다. 이탤릭체는 알두스 마누티우스와 <br>앨다인 프레스가 1501년에 처음 만들어 냈다.<br>일반 로마체와 비교했을때, 소문자 e, f, k 등이 <br>일반 자형과 두드러진 차이를 보이는 것이 <br>보통이다.이탤릭체는 흐르는 글씨채로 계속 <br>글자를 이어서 쓴다. 펜의 각도는 약 45도 <br>정도이다. 이 때, 각도가 중요하기 때문에 <br>연습이 많이 필요한 글씨체라고 한다. 보통 <br>입문으로도 많이 쓰는 글씨체이다.</p2>
+			</div>
+	</section>
+	<section id="contents4">
+		<div class="a">
+			<div class="a" id="back4">
+				<h2>Tools</h2>
+				<p1>캘리그라피(Calligraphy)를 쓰기 위해서는 반드시 도구가 필요하다. <br>다양한 도구들의 각각의 특성을 알아보고 자신에게 적합한 도구를 사용하는 것이 좋다.</p1>
+
+				<h3 id="h1">붓 OR 붓펜</h3>
+				<p2 id="p1">붓은 다루기가 어렵지만 익숙해지면 글씨의 <br>강약을 조절하면서 자유자재로 쓸 수 있어서 <br>정말 좋은 재료이다.<br><br>사용자의 기량에 따라서 훨씬 다양한 매력을 <br>나타낼 수 있다. 붓을 사용하려면 준비해야<br>되는 것들이 많기 때문에 요새는 붓펜을 <br>이용한 작품들을 많이 볼 수 있다.</p2>
+
+				<h3 id="h2">딥펜</h3>
+				<p2 id="p2">딥펜은 펜대와 펜촉으로 분리되고 펜촉을 <br>끼워서 사용한다. 잉크에 찍어서 글씨를 쓰고<br>잉크가 부족하면 계속 찍어주며 사용한다.<br><br>펜촉은 망가지기가 쉬워서 관리를 잘해줘야 <br>한다. 까다로운 펜촉 같은 경우는 길들이는 게<br> 중요하다.</p2>
+
+				<h3 id="h3">펜</h3>
+				<p2 id="p3">가장 기초적이면서 연습을 하기 좋은 캘리그 <br>라피 도구이다. 특별한 기교를 부리진 못하지만 <br>기본이 되는 모양을 만들 수 있는 재료이다. <br><br>시중에 다양한 캘리그라피 펜들도 있고, 색연 <br>필이나 연필, 볼펜도 좋은 재료이기 때문에 <br>다양하게 써보면 좋다.</p2>
+			</div>
+	</section>
+	<section id="contents5">
+		<div class="a">
+			<div class="a" id="back5">
+				<h2>Calligrapher</h2>
+				<p1>국내의 캘리그라피 작가님들</p1>
+
+				<h3 id="h1">리노, 김현중 작가</h3>
+				<p2 id="p1">작업의 스펙트럼이 무궁무진하다. 독보적인 <br> 한글캘리그라피부터 영문캘리그라피까지! <br><br>다양한 도구를 사용하며, 디지털을 이용한 <br>디지털캘리그라피도 연구를 많이해서 많은 <br>브러쉬소스들을 배포한다. 쉬지 않고 작업을 <br>하며, 세미콜론이라는 카페도 운영중이다.</p2>
+			</div>
+	</section>
+	<section id="contents6">
+		<div class="a">
+			<div class="a" id="back6">
+				<h3>슬로리, 이문섭 작가</h3>
+				<p2>사실 작가로 활동하지 오래되지 않았지만 <br>떠오르는 세계적인 작가님이다. <br><br>영문 캘리 작가님으로 다양한 서체들을 쓰며, <br>작업을 늘려가는 중이다. 디지털캘리그라피도 <br>꾸준히 활용을 하면서, 최근에는 김현중 <br>작가님이랑 같이 클래스도 진행했다.</p2>
+			</div>
+	</section id="contents7">
+	<footer>
+		<div class="a">
+			<div class="a" id="back7">
+			<p5 id="p1">평소 좋아하고 관심을 가지고 있는 캘리그라피에 <br>대한 페이지를 만들었다. 고등학교 2학년 때, <br>나만의 스트레스 해소법을 찾다가 캘리그라피에 <br> 관심을 가졌고, 지금도 꾸준히 좋아하는 취미이다. <br>처음에는 어렵지만, 인내심을 가지고 지속적으로 <br>연습을 하다보면 점점 나아지는 걸 눈으로 확인할 <br>수 있어서 좋다. 연습을 안하면 그만큼 또 못 쓰게 <br>되기 때문에 바쁘더라도 조금씩 쓰려고 노력하게 <br>된다. 시간을 투자한만큼 결과가 나와서 참 정직한 <br>분야라는 생각도 든다. 내가 캘리그라피를 좋아 <br>하는 이유 중 하나이기도 하다. 요령을 피워서 <br>얻는 결과를 그닥 좋아하지 않는 성격을 가지고 <br>있기 때문이라고 생각한다. 남들이 보면 ‘참 <br>미련하다, 피곤하게 산다’라고 생각할 수도 있지만, <br>난 정직한 게 좋다. <br><br><br> 글씨를 쓰다보면, 불안했던 마음이 점차 안정되는 <br> 것도 느낀다. 머리가 복잡하고, 기분이 안좋을 때, <br>잔잔한 노래를 들으면서 좋아하는 문구를 쓰면 <br>기분이 좋아진다. 힘들 때, 사람들과 있는 것 보단 <br>혼자서 시간을 보내는 걸 더 좋아하는 나에겐 <br>이것보다 좋은 취미는 없는 것 같다.</p5>
+			<p5 id="p2">나의 작은 취미가 다른 사람들에게도 행복을 <br> 나눠줄 때, 더 뿌듯해져서 계속 글씨를 쓰게 된다. <br> 그래서 더 좋은 문구, 사람들이 공감할 수 있는 <br> 문구를 찾게 된다. 최근에는 조금씩 글을 끄적이기 <br> 시작했다. 자발적이기 보단, 수업의 과제로 시작된 <br> 글쓰기였지만, 지금은 정말 내가 쓰고 싶은 소재를 <br> 찾아서 짧더라도 쓰려고 노력하는 중이다. 아직은 <br> 창피해서 나만보고 있지만, 정말 나중엔 다른 <br>사람들의 글이 아닌, 오로지 나의 글을 나만의 <br> 서체로 쓰고 싶단 소망을 실현하고 싶다. <br><br><br>어렸을 때부터 글씨에 관심이 많았기 때문에 더욱 <br>거리낌없이 관심을 가지게 되었다. 요새는 영문 <br>캘리그라피를 연습하는 중이라서 이번 페이지가 <br>영문 캘리에 좀 더 치중되어 있다. 한글 캘리와는 <br>또다른 매력을 가진 영문캘리에 푹 빠져서 산다. <br>글씨에 꾸밈을 주기엔 한글보다 영문이 좀 더 <br>다양하기 때문에 열심히 연습 중이다. 캘리그라피 <br>의 정의부터 역사, 서체의 종류, 도구 의 종류, <br>그리고 한국의 유명 작가님들까지 차례대로 <br>이어진다. 캘리를 처음 접하는 사람들에게 쉽게 <br>접근하기 좋은 페이지를 만들어봤다.</p5>
+
+			<p6 id="p3">Calligraphy</p6>
+			<p6 id="p4">윤지우</p6>
+			<p6 id="p5">ygiwoo48@gmail.com</p6>
+
+
+		</div>
+	</footer>
+	
+
+</body>
+</html>
